@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+img {
+    max-width: 100%;
+}
+
+// Menu Start
+.menu {
+    .top-btn {
+        button{
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            padding: 15px 40px;
+            position: relative;
+            border-radius: 4px;
+            z-index: 1;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+            &::after{
+                content: '';
+                background-color: #44ce6f;
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: 0;
+                width: 0;
+                height: 100%;
+                z-index: -1;
+                border-radius:5px ;
+                transition: .5s;
+            }
+            &:hover::after{
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+        }
+        .support-btn {
+            background: 0 0;
+            border: 2px dashed #cdf1d8;
+            padding: 12px 33px;
+            margin-right: 10px;
+            transition: .3s;
+            &:hover{
+                color: #fff;
+                border-color: #44ce6f;
+            }
+        }
+        .login-btn{
+            background: #c679e3;
+            color: #fff;
+            box-shadow: 0 13px 27px 0 #c779e347;
+        }
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        padding: 15px 0;
+
+        a.cart {
+            position: relative;
+            margin-right: 20px;
+            top: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            color: #4a6f8a;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-left: 14px;
+            margin-right: 14px;
+            transition: .3s;
+
+            &:hover {
+                color: #44ce6f;
+            }
+
+            .cart_value {
+                display: inline-block;
+                background-color: red;
+                color: #fff;
+                font-size: 9px;
+                width: 13px;
+                height: 13px;
+                text-align: center;
+                line-height: 14px;
+                border-radius: 50%;
+                position: relative;
+                top: -7px;
+                right: 8px;
+            }
+        }
+    }
+}
+
+// Menu End
+
