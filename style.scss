@@ -327,6 +327,12 @@ p:last-child {
         -webkit-box-shadow: 0 0 10px rgba(72, 69, 224, .10);
         box-shadow: 0 0 10px rgba(72, 69, 224, .10);
         transition: .5s;
+        .icon i{
+            font-size: 22px;
+            display: block;
+            text-align: center;
+            margin-top: 17px;
+        }
 
         &::before {
             content: "";
