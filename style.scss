@@ -1341,7 +1341,12 @@ span a {
     }
 }
 
-
+@media (min-width:992px) {
+    .menu{
+        position: absolute;
+        right: 30px;
+    }
+}
 
 
 
@@ -1353,7 +1358,28 @@ span a {
     }
 }
 
-
+@media (max-width:1200px){
+    // .menu {
+    //     // display: none;
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 50%;
+    //     height: 100vh;
+    //     width: 100%;
+    //     background-color: #23bdb8;
+    //     li{
+    //         display: block;
+    //         text-align: center;
+    //     }
+    // }
+    .top-btn{
+        display: none !important;
+    }
+    // .logo_img{
+    //     position: absolute;
+    //     top: 30px;
+    // }
+}
 
 
 
@@ -1380,5 +1406,21 @@ span a {
         position: relative;
         margin: 20px auto;
     }
-    
+    .funfacts-area .contact-cta-box {
+        text-align: center;
+        margin: 20px 0 0;
+        max-width: 100%;
+        padding: 30px 20px;
+        
+    }
+    .funfacts-area .contact-cta-box .primary-btn {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: 15px;
+    }
+    .ready-to-talk span {
+        display: block;
+        margin-top: 25px;
+    }
 }
