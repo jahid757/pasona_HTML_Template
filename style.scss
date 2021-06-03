@@ -46,8 +46,8 @@ p {
     line-height: 1.9;
     font-size: 17px;
 }
-li {
-    font-size: 17px;
+li,.menu li a {
+    font-size: 17px !important;
 }
 .bg-f9f6f6 {
     background-color: #f9f6f6;
