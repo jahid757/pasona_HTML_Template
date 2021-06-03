@@ -6,7 +6,7 @@ a:focus, a:hover {
     color: #44ce6f;
 }
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: 14px;
 }
 .blog-area .pagination-area, .single-blog-post {
@@ -44,6 +44,7 @@ img {
 p {
     color: #6084a4;
     line-height: 1.9;
+    font-size: 17px;
 }
 .bg-f9f6f6 {
     background-color: #f9f6f6;
@@ -234,10 +235,11 @@ p:last-child {
 
     p {
         margin-bottom: 30px;
+
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: 500;
         margin-bottom: 20px;
     }
