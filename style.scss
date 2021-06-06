@@ -1455,6 +1455,8 @@ span a {
 }
 
 
+
+
 @keyframes moveBG {
     0% {
         transform: translateX(0);
@@ -1556,5 +1558,11 @@ span a {
     .ready-to-talk span {
         display: block;
         margin-top: 25px;
+    }
+    .faq-accordion{
+        padding: 10px !important;
+    }
+    .accordion__title div .icon{
+        display: none;
     }
 }
