@@ -1454,7 +1454,47 @@ span a {
     
 }
 
-
+.login-page{
+    .accordion__title div p.text{
+        font-size: 16px;
+    }
+    .accordion__title div .icon{
+        display: none;
+    }
+    .input-box input{
+        width: 100%;
+        padding: 10px;
+    }
+    input{
+        margin-bottom: 15px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #ddd;
+    }
+    input,label{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #checkbox{
+        margin-right: 7px;
+    }
+    .sign-in-btn{
+        width: 100%;
+        background: #7367f0;
+        outline: none;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        font-weight: 500;
+        margin: 15px 0;
+    }
+    .create-account-text a{
+        text-decoration: none;
+        &:hover{
+            color:#0d6efd;
+        }
+    }
+}
 
 
 @keyframes moveBG {
@@ -1482,6 +1522,12 @@ span a {
         position: absolute;
         right: 30px;
     }
+    .login-page-logo{
+        width:20%;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+    }
 }
 
 
@@ -1491,6 +1537,12 @@ span a {
     .box-area {
         padding-bottom: 50px;
         margin-top: 0px;
+    }
+    .login-page-logo{
+        width:40%;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
     }
 }
 

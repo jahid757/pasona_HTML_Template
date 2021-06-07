@@ -71,7 +71,7 @@
                 <li class="nav-item"><a href="#">ব্লগ</a></li>
                 <li class="nav-item"><a href="contact.html">যোগাযোগ</a></li>
                 <div class="d-none d-md-inline-block top-btn">
-                  <button class="primary-btn text-dark support-btn">
+                  <button id="login_btn" class="primary-btn text-dark support-btn">
                     লগ-ইন
                   </button>
                   <button class="primary-btn login-btn">সাইন-আপ</button>
@@ -316,5 +316,11 @@
         </div>
       </div>
     </footer>
+    <script>
+        const loginBtn = document.getElementById('login_btn');
+        loginBtn.addEventListener( 'click', () => {
+          location.href = '/login.html';
+        })
+    </script>
   </body>
 </html>
