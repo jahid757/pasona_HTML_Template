@@ -27,3 +27,13 @@ $(document).ready(function(){
 
   });
 
+  const loginBtn = document.getElementById('login_btn');
+  loginBtn.addEventListener( 'click', () => {
+    location.href = 'https://jahid757.github.io/pasona_HTML_Template/login.html';
+  });
+  
+  const signup = document.getElementById('signup');
+  signup.addEventListener('click', () =>{
+    location.href = '/registration.html';
+    console.log('object');
+  })
