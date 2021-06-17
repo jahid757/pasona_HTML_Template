@@ -7,6 +7,13 @@ a:focus,
 a:hover {
     color: #44ce6f;
 }
+ul{
+    margin-bottom: 0;
+}
+li{
+    list-style:none;
+    list-style-type: none;
+}
 a{
     text-decoration: none;
 }
@@ -2185,6 +2192,40 @@ p:last-child {
         transform: rotate(1turn);
     }
 }
+
+
+
+
+// pos style
+
+.menu_icon{
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:992px) {
     .menu {
