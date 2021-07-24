@@ -1,39 +1,92 @@
-$(document).ready(function(){
+let indicator1 = true;
+let indicator2 = true;
+let indicator3 = true;
+let indicator4 = true;
+let indicator5 = true;
+let indicator6 = true;
 
-    $("#toggleBtn1").click(function(){
+$(document).ready(function () {
+  $("#toggleBtn1").click(function () {
+    if (indicator1 === true) {
       $(".toggleText").slideUp();
-      $("#toggleText1").slideToggle();
-    });
-    $("#toggleBtn2").click(function(){
+      $("#toggleText1").slideDown();
+      indicator1 = false;
+    } else {
       $(".toggleText").slideUp();
-      $("#toggleText2").slideToggle();
-    });
-    $("#toggleBtn3").click(function(){
-      $(".toggleText").slideUp();
-      $("#toggleText3").slideToggle();
-    });
-    $("#toggleBtn4").click(function(){
-      $(".toggleText").slideUp();
-      $("#toggleText4").slideToggle();
-    });
-    $("#toggleBtn5").click(function(){
-      $(".toggleText").slideUp();
-      $("#toggleText5").slideToggle();
-    });
-    $("#toggleBtn6").click(function(){
-      $(".toggleText").slideUp();
-      $("#toggleText6").slideToggle();
-    });
-
+      $("#toggleText1").slideUp();
+      indicator1 = true;
+    }
   });
 
-  const loginBtn = document.getElementById('login_btn');
-  loginBtn.addEventListener( 'click', () => {
-    location.href = 'https://jahid757.github.io/pasona_HTML_Template/login.html';
+  $("#toggleBtn2").click(function () {
+    if (indicator2 === true) {
+      $(".toggleText").slideUp();
+      $("#toggleText2").slideDown();
+      indicator2 = false;
+    } else {
+      $(".toggleText").slideUp();
+      $("#toggleText2").slideUp();
+      indicator2 = true;
+    }
   });
-  
-  const signup = document.getElementById('signup');
-  signup.addEventListener('click', () =>{
-    location.href = '/registration.html';
-    console.log('object');
-  })
+
+  $("#toggleBtn3").click(function () {
+    if (indicator3 === true) {
+      $(".toggleText").slideUp();
+      $("#toggleText3").slideDown();
+      indicator3 = false;
+    } else {
+      $(".toggleText").slideUp();
+      $("#toggleText3").slideUp();
+      indicator3 = true;
+    }
+  });
+
+  $("#toggleBtn4").click(function () {
+    if (indicator4 === true) {
+      $(".toggleText").slideUp();
+      $("#toggleText4").slideDown();
+      indicator4 = false;
+    } else {
+      $(".toggleText").slideUp();
+      $("#toggleText4").slideUp();
+      indicator4 = true;
+    }
+  });
+
+  $("#toggleBtn5").click(function () {
+    if (indicator5 === true) {
+      $(".toggleText").slideUp();
+      $("#toggleText5").slideDown();
+      indicator5 = false;
+    } else {
+      $(".toggleText").slideUp();
+      $("#toggleText5").slideUp();
+      indicator5 = true;
+    }
+  });
+
+  $("#toggleBtn6").click(function () {
+    if (indicator6 === true) {
+      $(".toggleText").slideUp();
+      $("#toggleText6").slideDown();
+      indicator6 = false;
+    } else {
+      $(".toggleText").slideUp();
+      $("#toggleText6").slideUp();
+      indicator6 = true;
+    }
+  });
+});
+
+const loginBtn = document.getElementById("login_btn");
+loginBtn.addEventListener("click", () => {
+  location.href = "https://jahid757.github.io/pasona_HTML_Template/login.html";
+});
+
+const signup = document.getElementById("signup");
+signup.addEventListener("click", () => {
+  location.href =
+    "https://jahid757.github.io/pasona_HTML_Template/registration.html";
+  console.log("object");
+});

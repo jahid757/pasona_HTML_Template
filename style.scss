@@ -21,7 +21,10 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 14px;
 }
-
+.main_text{
+    color: #7367F0;
+    font-weight: bold;
+}
 .blog-area .pagination-area,
 .single-blog-post {
     margin-bottom: 30px;
@@ -1557,6 +1560,7 @@ p:last-child {
 .toggleText {
     margin-bottom: 15px;
     display: none;
+    padding-left: 45px;
 }
 
 .no-mg {
