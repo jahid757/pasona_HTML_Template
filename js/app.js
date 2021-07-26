@@ -90,3 +90,5 @@ signup.addEventListener("click", () => {
     "https://jahid757.github.io/pasona_HTML_Template/registration.html";
   console.log("object");
 });
+
+console.log('object');
