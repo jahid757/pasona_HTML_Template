@@ -91,4 +91,17 @@ signup.addEventListener("click", () => {
   console.log("object");
 });
 
-console.log('object');
+// console.log('object');
+
+// scroll to top
+// for add extra style on back to top arrow
+// window.addEventListener('scroll',function(){
+//   const scroll = document.querySelector('#scrollTop');
+// })
+
+function scrollToTop(){
+  window.scroll({
+    top:0,
+    behavior:'smooth'
+  })
+}

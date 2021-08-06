@@ -1605,7 +1605,18 @@ p:last-child {
     }
 
 }
-
+#scrollTop{
+    background: #c679e3;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    padding: 10px 15px;
+    z-index: 100;
+    font-size: 20px;
+    border-radius: 7px 0px 0px 7px;
+    color: #fff;
+    cursor: pointer;
+}
 .contact-form {
     .primary-btn {
         &:hover {
