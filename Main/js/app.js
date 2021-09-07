@@ -108,9 +108,14 @@ function scrollToTop(){
 
 
 
-function searchBtn(addId,removeId){
+function searchBtn(condition,addId,removeId){
   const searchSection = document.getElementById(addId);
   const formSection = document.getElementById(removeId);
-  searchSection.classList.add('active');
-  formSection.classList.remove('active')
+  if(condition === true){
+    searchSection.classList.add('active');
+    formSection.classList.add('active')
+  }else{
+    searchSection.classList.remove('active');
+    formSection.classList.remove('active')
+  }
 }

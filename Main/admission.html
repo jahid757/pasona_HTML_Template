@@ -102,21 +102,20 @@
     <section class="faq-area ptb-80 mt-5 login-page">
             <div class="container">
               <div class="row">
-                <div class="col-md-5 faq-accordion d-flex align-items-center justify-content-center position-relative">
+                <div class="col-md-5 position-relative card_wrapper">
 
-                    <div id="id_search" class="login-input">
-                        <!-- <h4 class="text-capitalize mb-1">welcome to amar client</h4> -->
-                        <p>কোচিং এ ভর্তি হতে কোচিং আইডি দিন</p>
+                    <div id="id_search" class="login-input card_view faq-accordion">
                         <form action="">
+                        <p>কোচিং এ ভর্তি হতে কোচিং আইডি দিন</p>
                             <div class="input-box">
                                 <label for="email">ID</label>
                                 <input id="email" type="email" placeholder="example:836482">
                             </div>
-                            <a href="javascript:void(0)" onclick="searchBtn('id_search','form_section')" class="d-block text-center my-0 sign-in-btn rounded">Search</a>
+                            <a href="javascript:void(0)" onclick="searchBtn(true,'id_search','form_section')" class="d-block text-center my-0 sign-in-btn rounded">Search</a>
                         </form>
                     </div>
 
-                    <div id="form_section" class="login-input active">
+                    <div id="form_section" class="login-input card_view faq-accordion">
                         <form action="">
                             <div class="input-box">
                                 <label for="email">কোচিং আইডি</label>
@@ -126,7 +125,15 @@
                               <label for="mobile">মোবাইল</label>
                                 <input id="mobile" name="mobile" type="text" placeholder="01XXXXXXXXX">
                             </div>
-                            <a href="javascript:void(0)" onclick="searchBtn('form_section','id_search')" class="d-block text-center my-0 sign-in-btn rounded">Back</a>
+                            <div class="input-box">
+                              <label for="salary">বেতনের ধরণ </label>
+                                <input id="salary" name="salary" type="text" placeholder="01XXXXXXXXX">
+                            </div>
+                            <div class="input-box">
+                              <label for="address">ঠিকানা  </label>
+                                <input id="address" name="address" type="text" placeholder="01XXXXXXXXX">
+                            </div>
+                            <a href="javascript:void(0)" onclick="searchBtn(false,'form_section','id_search')" class="d-block text-center my-0 sign-in-btn rounded">Back</a>
                         </form>
                     </div>
 
