@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pasona | Login</title>
+    <title>Pasona | Admission</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -104,21 +104,21 @@
               <div class="row">
                 <div class="col-md-5 position-relative card_wrapper">
 
-                    <div id="id_search" class="login-input card_view faq-accordion">
+                    <div id="id_search" class="login-input card_view faq-accordion col-md-5">
                         <form action="">
                         <p>কোচিং এ ভর্তি হতে কোচিং আইডি দিন</p>
                             <div class="input-box">
                                 <label for="email">ID</label>
                                 <input id="email" type="email" placeholder="example:836482">
                             </div>
-                            <a href="javascript:void(0)" onclick="searchBtn(true,'id_search','form_section')" class="d-block text-center my-0 sign-in-btn rounded">Search</a>
+                            <a href="javascript:void(0)" onclick="searchBtn(true,'id_search','form_section','bottom_input')" class="d-block text-center my-0 sign-in-btn rounded">Search</a>
                         </form>
                     </div>
 
                     <div id="form_section" class="login-input card_view faq-accordion">
                         <form action="">
                                <div class="d-flex justify-content-between align-items-center">
-                                 <div class="me-5">
+                                 <div class="me-5 mb-3">
                                   <p for="email">কোচিং আইডি:</p>
                                   <p for="mobile">মোবাইল:</p>
                                   <p for="salary">বেতনের ধরণ:</p>
@@ -131,13 +131,16 @@
                                   <p for="address">সময়:</p>
                                  </div>
                                </div>
-                            <a href="javascript:void(0)" onclick="searchBtn(false,'form_section','id_search')" class="d-block text-center my-0 sign-in-btn rounded">Back</a>
+                            <a href="javascript:void(0)" onclick="searchBtn(false,'form_section','id_search','bottom_input')" class="d-block text-center my-0 sign-in-btn rounded">Back</a>
                         </form>
                     </div>
 
                   </div>
+
+
                   <div class="col-md-7">
-                    <div class="faq-accordion">
+                    <div class="faq-accordion position-relative">
+                    <div class="faq">
                         <div id="toggleBtn1" class="accordion__item">
                           <div class="accordion__title">
                             <div>
@@ -242,6 +245,56 @@
                             এক্সিকিউটিভ এর মাধ্যমে খুব সহজে সমস্যাটির সমাধান করতে পারেন।
                           </p>
                         </div>
+                      </div>
+                      <div class="position-absolute" id="bottom_input">
+                        <div class="me-3 input-box">
+                          <label for="class">Select you class</label>
+                          <select name="class" id="class">
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                            <option value="9">Nine</option>
+                            <option value="10">Ten</option>
+                          </select>
+
+                          <label for="name">Enter your name</label>
+                          <input placeholder="Enter Your Name" type="text" name="name" id="name">
+
+                          <label for="gName">Enter your G name</label>
+                          <input placeholder="Enter Your G Name" type="text" name="gName" id="gName">
+
+                          <input type="date" name="" id="">
+
+                          <label for="address">Enter your Address</label>
+                          <textarea placeholder="Enter Your Valid Address" name="address" id="address"></textarea>
+
+                        </div>
+                        <div>
+                            <label for="section">Select your section</label>
+                          <select name="section" id="section">
+                            <option value="7">Section A</option>
+                            <option value="8">Section B</option>
+                            <option value="9">Section C</option>
+                            <option value="10">Section D</option>
+                          </select>
+
+                          <label for="mobile">Enter your mobile</label>
+                          <input placeholder="Enter Your Mobile" type="text" name="mobile" id="mobile">
+
+                          <label for="mobile">Enter your G mobile</label>
+                          <input placeholder="Enter Your G Mobile" type="text" name="mobile" id="mobile">
+                          
+                          <label for="gender">Gender</label>
+                          <select name="gender" id="gender">
+                            <option selected value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+
+                          <label for="profile">Upload your photo</label>
+                          <input type="file" name="profile" id="profile">
+                          <button class="sign-in-btn rounded m-0">Get Admission</button>
+
+                        </div>
+                      </div>
                       </div>
                     </div>
 
