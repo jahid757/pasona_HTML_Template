@@ -2284,6 +2284,16 @@ blockquote::after {
     top: -2px;
     width: 15px;
 }
+#id_search,#form_section{
+    position: absolute;
+    background-color: #fff;
+    transition: all 1s;
+    z-index: 10;
+}
+#id_search.active,#form_section.active{
+    opacity: 0;
+    z-index: 1;
+}
 
 @keyframes moveBG {
     0% {

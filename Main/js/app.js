@@ -105,3 +105,12 @@ function scrollToTop(){
     behavior:'smooth'
   })
 }
+
+
+
+function searchBtn(addId,removeId){
+  const searchSection = document.getElementById(addId);
+  const formSection = document.getElementById(removeId);
+  searchSection.classList.add('active');
+  formSection.classList.remove('active')
+}
